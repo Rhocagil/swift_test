@@ -9,11 +9,18 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var theNewLabel: UILabel!
+    
+    @IBAction func buttonTapped(_ sender: Any) {
+        theNewLabel.text = "Buttons are cool!"
+    }
+  
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-    }
+                    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
