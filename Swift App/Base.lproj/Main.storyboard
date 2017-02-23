@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -18,52 +18,56 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Hello World!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zqs-JW-FpL">
-                                <rect key="frame" x="141.5" y="60" width="93.5" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zqs-JW-FpL">
+                                <rect key="frame" x="113.5" y="60" width="93" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ubF-z1-pgW">
-                                <rect key="frame" x="158" y="141" width="60" height="30"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hhp-dK-DaF">
-                                        <rect key="frame" x="0.0" y="0.0" width="60" height="30"/>
-                                        <state key="normal" title="Push me"/>
-                                        <connections>
-                                            <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vT8-jQ-nVk"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hhp-dK-DaF">
+                                <rect key="frame" x="130" y="130.5" width="60" height="30"/>
+                                <state key="normal" title="Push me"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vT8-jQ-nVk"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Uwh-X4-Lxq">
+                                <rect key="frame" x="110" y="200.5" width="100" height="30"/>
                                 <constraints>
-                                    <constraint firstItem="Hhp-dK-DaF" firstAttribute="centerX" secondItem="ubF-z1-pgW" secondAttribute="centerX" id="rDk-rE-WyX"/>
+                                    <constraint firstAttribute="width" constant="100" id="o9G-ct-LcS"/>
                                 </constraints>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Fj9-JZ-lz6">
-                                <rect key="frame" x="144" y="231" width="86" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ftG-qt-VBT">
-                                        <rect key="frame" x="0.0" y="0.0" width="86" height="30"/>
-                                        <state key="normal" title="Push me too"/>
-                                        <connections>
-                                            <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0wo-6C-GL1"/>
-                                            <action selector="ndButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qbl-8S-cti"/>
-                                            <action selector="secondButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HWu-Xh-Fz9"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HqW-VI-9MA">
+                                <rect key="frame" x="110" y="246.5" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Zqu-Dz-jri"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Uwh-X4-Lxq" firstAttribute="top" secondItem="Hhp-dK-DaF" secondAttribute="bottom" constant="40" id="3u1-Gt-kMJ"/>
+                            <constraint firstItem="zqs-JW-FpL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5fH-5p-YDM"/>
+                            <constraint firstItem="Hhp-dK-DaF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5zG-db-6Ak"/>
                             <constraint firstItem="zqs-JW-FpL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="8qC-Fh-jVJ"/>
+                            <constraint firstItem="HqW-VI-9MA" firstAttribute="top" secondItem="Uwh-X4-Lxq" secondAttribute="bottom" constant="16" id="QYi-5A-AXy"/>
+                            <constraint firstItem="Uwh-X4-Lxq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TeO-KD-87B"/>
+                            <constraint firstItem="Hhp-dK-DaF" firstAttribute="top" secondItem="zqs-JW-FpL" secondAttribute="bottom" constant="50" id="Zeb-sc-IC4"/>
+                            <constraint firstItem="HqW-VI-9MA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cBX-aT-XQF"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="text1" destination="Uwh-X4-Lxq" id="17l-Kk-kAC"/>
+                        <outlet property="text2" destination="HqW-VI-9MA" id="JoW-EV-31c"/>
                         <outlet property="theNewLabel" destination="zqs-JW-FpL" id="o15-xP-drZ"/>
                     </connections>
                 </viewController>

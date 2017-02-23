@@ -12,8 +12,12 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var theNewLabel: UILabel!
     
+    @IBOutlet weak var text1: UITextField!
+
+    @IBOutlet weak var text2: UITextField!
+    
     @IBAction func buttonTapped(_ sender: Any) {
-        theNewLabel.text = "Buttons are cool!"
+        theNewLabel.text = "Svar: \(Double(text1.text!)! + Double(text2.text!)!)"
     }
   
     
